@@ -1,0 +1,149 @@
+"""
+Image preprocessing and tf.data.Dataset creation
+"""
+
+import os
+import tensorflow as tf
+import pandas as pd
+from typing import Tuple, Dict
+from sklearn.model_selection import train_test_split
+import logging
+
+logger = logging.getLogger(__name__)
+
+
+class ImagePreprocessor:
+    """Handles image preprocessing and dataset creation"""
+    
+    def __init__(self, config: Dict, labels_df: pd.DataFrame):
+        """
+        Args:
+            config: Configuration dictionary
+            labels_df: DataFrame with image labels
+        """
+        self.config = config
+        self.labels_df = labels_df
+        
+        self.height = config['model']['image_height']
+        self.width = config['model']['image_width']
+        self.channels = config['model']['channels']
+        self.batch_size = config['training']['batch_size']
+        
+        self.images_folder = os.path.join(
+            config['data']['drive_path'],
+            config['data']['images_folder']
+        )
+    
+    def preprocess_labels(self, validate_images: bool = False) -> pd.DataFrame:
+        """
+        Add image paths and optionally validate files
+        
+        Args:
+            validate_images: If True, validate all images (SLOW! ~1-2 hours for 200K images)
+                            If False, skip validation (FAST! ~5 seconds)
+        """
+        # Extract filename from a_fileHigh
+        self.labels_df['image_filename'] = self.labels_df['a_fileHigh'].apply(
+            lambda x: x.rstrip(',').split('\\')[-1].split('/')[-1] if pd.notna(x) else None
+        )
+        self.labels_df = self.labels_df.dropna(subset=['image_filename'])
+        
+        # Create full paths
+        self.labels_df['image_path'] = self.labels_df['image_filename'].apply(
+            lambda x: os.path.join(self.images_folder, x)
+        )
+        
+        # Optional validation (CSAK akkor ha kéred!)
+        if validate_images:
+            logger.warning("?? Image validation enabled - this will take 1-2 hours for 200K images!")
+            self._validate_all_images()
+        else:
+            logger.info("? Skipping image validation for speed. Use validate_images=True if needed.")
+        
+        logger.info(f"? {len(self.labels_df)} images ready")
+        
+        return self.labels_df
+    
+    def _validate_all_images(self):
+        """Validate all image files (SLOW operation!)"""
+        logger.info("?? Validating image files...")
+        problematic_images = []
+        
+        for idx, row in self.labels_df.iterrows():
+            image_path = row['image_path']
+            if not os.path.exists(image_path):
+                problematic_images.append(image_path)
+            else:
+                try:
+                    img = tf.io.read_file(image_path)
+                    img = tf.image.decode_jpeg(img, channels=self.channels)
+                    if img.shape[-1] != self.channels:
+                        problematic_images.append(image_path)
+                except Exception:
+                    problematic_images.append(image_path)
+        
+        if problematic_images:
+            logger.warning(f"?? Removing {len(problematic_images)} problematic images")
+            self.labels_df = self.labels_df[~self.labels_df['image_path'].isin(problematic_images)]
+    
+    def create_datasets(self) -> Tuple[tf.data.Dataset, tf.data.Dataset]:
+        """Create train and validation tf.data.Datasets"""
+        # Split
+        train_df, val_df = train_test_split(
+            self.labels_df,
+            test_size=self.config['training']['validation_split'],
+            random_state=self.config['training']['random_seed']
+        )
+        
+        logger.info(f"?? Train: {len(train_df)}, Validation: {len(val_df)}")
+        
+        # Create datasets
+        train_dataset = self._create_dataset_from_df(train_df, shuffle=True)
+        val_dataset = self._create_dataset_from_df(val_df, shuffle=False)
+        
+        return train_dataset, val_dataset
+    
+    def _create_dataset_from_df(self, df: pd.DataFrame, shuffle: bool) -> tf.data.Dataset:
+        """Create tf.data.Dataset from DataFrame"""
+        dataset = tf.data.Dataset.from_tensor_slices((
+            df['image_path'].values,
+            df['advertiser_index'].values,
+            df['basebrand_index'].values,
+            df['brand_index'].values,
+            df['segment_index'].values
+        ))
+        
+        dataset = dataset.map(
+            self._load_and_preprocess_image,
+            num_parallel_calls=tf.data.AUTOTUNE
+        )
+        
+        if shuffle:
+            dataset = dataset.shuffle(buffer_size=1000)
+        
+        dataset = dataset.batch(self.batch_size).prefetch(tf.data.AUTOTUNE)
+        
+        return dataset
+    
+    def _load_and_preprocess_image(
+        self,
+        image_path: tf.Tensor,
+        advertiser_index: tf.Tensor,
+        basebrand_index: tf.Tensor,
+        brand_index: tf.Tensor,
+        segment_index: tf.Tensor
+    ) -> Tuple[tf.Tensor, Dict[str, tf.Tensor]]:
+        """Load and preprocess a single image"""
+        img = tf.io.read_file(image_path)
+        img = tf.image.decode_jpeg(img, channels=self.channels)
+        img = tf.image.resize(img, [self.height, self.width])
+        img = img / 255.0
+        
+        labels = {
+            'segment_output': segment_index,
+            'brand_output': brand_index,
+            'basebrand_output': basebrand_index,
+            'advertiser_output': advertiser_index
+        }
+        
+        return img, labels

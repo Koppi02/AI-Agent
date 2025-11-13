@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\config",
+    "\\notebooks",
+    "\\scripts",
+    "\\src",
+    "\\src\\data",
+    "\\src\\hierarchy",
+    "\\src\\models",
+    "\\src\\ocr",
+    "\\src\\utils"
+  ],
+  "PreviewInSolutionExplorer": false
+}

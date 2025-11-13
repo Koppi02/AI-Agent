@@ -1,0 +1,84 @@
+﻿# MAVERICK Configuration File
+
+# Data paths - FRISSÍTVE A TE STRUKTÚRÁDRA
+data:
+  drive_path: '/content/drive/MyDrive/AI_PROJECTS/'
+
+  # CSV fájlok - MÓDOSÍTSD ha máshol vannak!
+  labels_csv: 'labels/labels.csv'
+  processed_labels_csv: 'labels/processed_labels.csv'  # Auto-generált
+  abs_torveny_csv: 'labels/ABS_torveny.csv'
+
+  # Képek
+  images_folder: 'images/'
+  test_images_folder: 'test_images/'
+
+# Model architecture
+model:
+  image_height: 512
+  image_width: 512
+  channels: 3
+  dropout_rate: 0.5
+  conv_dropout_rate: 0.25
+
+# Training
+training:
+  batch_size: 32
+  epochs: 30
+  learning_rate: 0.0001
+  validation_split: 0.2
+  random_seed: 42
+
+# Checkpoints - FRISSÍTVE A TE MAVERICK MAPPÁDRA
+checkpoints:
+  directory: '/content/drive/MyDrive/AI_PROJECTS/MAVERICK/checkpoints/'
+  save_frequency: 1
+  model_save_path: '/content/drive/MyDrive/AI_PROJECTS/MAVERICK/maverick_latest.keras'
+
+# Prediction
+prediction:
+  confidence_threshold: 0.7
+
+# OCR
+ocr:
+  language: 'hu'
+  gpu_enabled: true
+
+# NER - Univerzális variáns-kezelés
+ner:
+  model_name: 'hu_core_news_lg'
+  variant_indicators:
+    - 'új'
+    - 'limited'
+    - 'special'
+    - 'edition'
+    - 'classic'
+    - 'original'
+    - 'premium'
+    - 'plus'
+    - 'pro'
+    - 'max'
+    - 'mini'
+    - 'extra'
+    - 'ultra'
+    - 'mega'
+    - 'super'
+  stopwords_extended:
+    - 'a'
+    - 'az'
+    - 'és'
+    - 'vagy'
+    - 'de'
+    - 'nem'
+    - 'is'
+    - 'ha'
+    - 'fel'
+    - 'le'
+    - 'be'
+    - 'ki'
+    - 'meg'
+    - 'el'
+    - 'csak'
+    - 'most'
+    - 'itt'
+    - 'ott'

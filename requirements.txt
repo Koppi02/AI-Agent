@@ -1,0 +1,27 @@
+# MAVERICK - Hierarchical Advertisement Classifier
+# Python >= 3.8
+
+# Core ML & Deep Learning
+tensorflow>=2.13.0
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+
+# Image Processing
+Pillow>=10.0.0
+
+# OCR & NER
+easyocr>=1.7.0
+huspacy>=0.8.0
+spacy>=3.5.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Configuration & Utils
+pyyaml>=6.0
+tqdm>=4.65.0
+
+# Optional: Google Colab specific (auto-installed in Colab)
+# google-colab>=1.0.0
