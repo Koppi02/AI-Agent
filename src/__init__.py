@@ -1,0 +1,16 @@
+"""
+MAVERICK - Hierarchical Advertisement Classifier
+"""
+
+__version__ = "0.6.0"
+__author__ = "Koppi02"
+
+from src.models.predictor import MaverickPredictor
+from src.data.loader import DataLoader
+from src.hierarchy.validator import HierarchyValidator
+
+__all__ = [
+    'MaverickPredictor',
+    'DataLoader',
+    'HierarchyValidator',
+]

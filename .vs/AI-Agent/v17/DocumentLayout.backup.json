@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\scripts\\predict.py||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:scripts\\predict.py||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\src\\data\\preprocessor.py||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\data\\preprocessor.py||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\src\\utils\\visualization.py||{8B382828-6202-11D1-8870-0000F87579D2}|",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\utils\\visualization.py||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
@@ -13,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\scripts\\train.py||{8B382828-6202-11D1-8870-0000F87579D2}|",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:scripts\\train.py||{8B382828-6202-11D1-8870-0000F87579D2}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\scripts\\predict.py||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:scripts\\predict.py||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\notebooks\\01_data_exploration.ipynb||{8B382828-6202-11D1-8870-0000F87579D2}|",
@@ -86,10 +90,6 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\data\\loader.py||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\src\\data\\preprocessor.py||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\data\\preprocessor.py||{8B382828-6202-11D1-8870-0000F87579D2}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\src\\ocr\\text_extractor.py||{8B382828-6202-11D1-8870-0000F87579D2}|",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\ocr\\text_extractor.py||{8B382828-6202-11D1-8870-0000F87579D2}|"
     },
@@ -149,8 +149,147 @@
         },
         {
           "DockedWidth": 102,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 10,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "validator.py",
+              "DocumentMoniker": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\src\\hierarchy\\validator.py",
+              "RelativeDocumentMoniker": "src\\hierarchy\\validator.py",
+              "ToolTip": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\src\\hierarchy\\validator.py",
+              "RelativeToolTip": "src\\hierarchy\\validator.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-11-13T12:29:03.546Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ner_processor.py",
+              "DocumentMoniker": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\src\\ocr\\ner_processor.py",
+              "RelativeDocumentMoniker": "src\\ocr\\ner_processor.py",
+              "ToolTip": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\src\\ocr\\ner_processor.py",
+              "RelativeToolTip": "src\\ocr\\ner_processor.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-11-13T12:28:37.195Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "text_extractor.py",
+              "DocumentMoniker": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\src\\ocr\\text_extractor.py",
+              "RelativeDocumentMoniker": "src\\ocr\\text_extractor.py",
+              "ToolTip": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\src\\ocr\\text_extractor.py",
+              "RelativeToolTip": "src\\ocr\\text_extractor.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-11-13T12:28:09.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "preprocessor.py",
+              "DocumentMoniker": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\src\\data\\preprocessor.py",
+              "RelativeDocumentMoniker": "src\\data\\preprocessor.py",
+              "ToolTip": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\src\\data\\preprocessor.py",
+              "RelativeToolTip": "src\\data\\preprocessor.py",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAAAJUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-11-13T12:27:55.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "loader.py",
+              "DocumentMoniker": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\src\\data\\loader.py",
+              "RelativeDocumentMoniker": "src\\data\\loader.py",
+              "ToolTip": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\src\\data\\loader.py",
+              "RelativeToolTip": "src\\data\\loader.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-11-13T12:27:35.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "config.yaml",
+              "DocumentMoniker": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\config\\config.yaml",
+              "RelativeDocumentMoniker": "config\\config.yaml",
+              "ToolTip": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\config\\config.yaml",
+              "RelativeToolTip": "config\\config.yaml",
+              "ViewState": "AgIAAFIAAAAAAAAAAIBJwFQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-13T12:26:56.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "requirements.txt",
+              "DocumentMoniker": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\requirements.txt",
+              "RelativeDocumentMoniker": "requirements.txt",
+              "ToolTip": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\requirements.txt",
+              "RelativeToolTip": "requirements.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-11-13T12:26:35.564Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "io_utils.py",
+              "DocumentMoniker": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\src\\utils\\io_utils.py",
+              "RelativeDocumentMoniker": "src\\utils\\io_utils.py",
+              "ToolTip": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\src\\utils\\io_utils.py",
+              "RelativeToolTip": "src\\utils\\io_utils.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-11-13T12:13:32.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "visualization.py",
+              "DocumentMoniker": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\src\\utils\\visualization.py",
+              "RelativeDocumentMoniker": "src\\utils\\visualization.py",
+              "ToolTip": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\src\\utils\\visualization.py",
+              "RelativeToolTip": "src\\utils\\visualization.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-11-13T12:13:22.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "train.py",
+              "DocumentMoniker": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\scripts\\train.py",
+              "RelativeDocumentMoniker": "scripts\\train.py",
+              "ToolTip": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\scripts\\train.py",
+              "RelativeToolTip": "scripts\\train.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-11-13T12:13:52.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "predict.py",
+              "DocumentMoniker": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\scripts\\predict.py",
+              "RelativeDocumentMoniker": "scripts\\predict.py",
+              "ToolTip": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\scripts\\predict.py",
+              "RelativeToolTip": "scripts\\predict.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-11-13T12:14:15.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 25,
@@ -166,154 +305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "validator.py",
-              "DocumentMoniker": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\src\\hierarchy\\validator.py",
-              "RelativeDocumentMoniker": "src\\hierarchy\\validator.py",
-              "ToolTip": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\src\\hierarchy\\validator.py",
-              "RelativeToolTip": "src\\hierarchy\\validator.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-11-13T12:29:03.546Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "ner_processor.py",
-              "DocumentMoniker": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\src\\ocr\\ner_processor.py",
-              "RelativeDocumentMoniker": "src\\ocr\\ner_processor.py",
-              "ToolTip": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\src\\ocr\\ner_processor.py",
-              "RelativeToolTip": "src\\ocr\\ner_processor.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-11-13T12:28:37.195Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "text_extractor.py",
-              "DocumentMoniker": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\src\\ocr\\text_extractor.py",
-              "RelativeDocumentMoniker": "src\\ocr\\text_extractor.py",
-              "ToolTip": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\src\\ocr\\text_extractor.py",
-              "RelativeToolTip": "src\\ocr\\text_extractor.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-11-13T12:28:09.679Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "preprocessor.py",
-              "DocumentMoniker": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\src\\data\\preprocessor.py",
-              "RelativeDocumentMoniker": "src\\data\\preprocessor.py",
-              "ToolTip": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\src\\data\\preprocessor.py",
-              "RelativeToolTip": "src\\data\\preprocessor.py",
-              "ViewState": "AgIAAJMAAAAAAAAAAIBJwJUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-11-13T12:27:55.128Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "loader.py",
-              "DocumentMoniker": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\src\\data\\loader.py",
-              "RelativeDocumentMoniker": "src\\data\\loader.py",
-              "ToolTip": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\src\\data\\loader.py",
-              "RelativeToolTip": "src\\data\\loader.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-11-13T12:27:35.439Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "config.yaml",
-              "DocumentMoniker": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\config\\config.yaml",
-              "RelativeDocumentMoniker": "config\\config.yaml",
-              "ToolTip": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\config\\config.yaml",
-              "RelativeToolTip": "config\\config.yaml",
-              "ViewState": "AgIAAFIAAAAAAAAAAIBJwFQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-13T12:26:56.006Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "requirements.txt",
-              "DocumentMoniker": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\requirements.txt",
-              "RelativeDocumentMoniker": "requirements.txt",
-              "ToolTip": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\requirements.txt",
-              "RelativeToolTip": "requirements.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-11-13T12:26:35.564Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "io_utils.py",
-              "DocumentMoniker": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\src\\utils\\io_utils.py",
-              "RelativeDocumentMoniker": "src\\utils\\io_utils.py",
-              "ToolTip": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\src\\utils\\io_utils.py",
-              "RelativeToolTip": "src\\utils\\io_utils.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-11-13T12:13:32.712Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "visualization.py",
-              "DocumentMoniker": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\src\\utils\\visualization.py",
-              "RelativeDocumentMoniker": "src\\utils\\visualization.py",
-              "ToolTip": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\src\\utils\\visualization.py",
-              "RelativeToolTip": "src\\utils\\visualization.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-11-13T12:13:22.388Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "train.py",
-              "DocumentMoniker": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\scripts\\train.py",
-              "RelativeDocumentMoniker": "scripts\\train.py",
-              "ToolTip": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\scripts\\train.py",
-              "RelativeToolTip": "scripts\\train.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-11-13T12:13:52.996Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "predict.py",
-              "DocumentMoniker": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\scripts\\predict.py",
-              "RelativeDocumentMoniker": "scripts\\predict.py",
-              "ToolTip": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\scripts\\predict.py",
-              "RelativeToolTip": "scripts\\predict.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-11-13T12:14:15.064Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "01_data_exploration.ipynb",
               "DocumentMoniker": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\notebooks\\01_data_exploration.ipynb",
               "RelativeDocumentMoniker": "notebooks\\01_data_exploration.ipynb",
@@ -321,12 +313,11 @@
               "RelativeToolTip": "notebooks\\01_data_exploration.ipynb",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAJkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-11-13T12:14:38.093Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-13T12:14:38.093Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "cnn_model.py",
               "DocumentMoniker": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\src\\models\\cnn_model.py",
               "RelativeDocumentMoniker": "src\\models\\cnn_model.py",
@@ -334,12 +325,11 @@
               "RelativeToolTip": "src\\models\\cnn_model.py",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-11-13T12:12:17.049Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-13T12:12:17.049Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "maverick.py",
               "DocumentMoniker": "C:\\Users\\kovacsik\\Desktop\\maverick.py",
               "RelativeDocumentMoniker": "..\\..\\..\\Desktop\\maverick.py",
@@ -347,12 +337,11 @@
               "RelativeToolTip": "..\\..\\..\\Desktop\\maverick.py",
               "ViewState": "AgIAAIMEAAAAAAAAAAAkwIUEAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-11-13T12:01:09.684Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-13T12:01:09.684Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "__init__.py",
               "DocumentMoniker": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\src\\models\\__init__.py",
               "RelativeDocumentMoniker": "src\\models\\__init__.py",
@@ -360,12 +349,11 @@
               "RelativeToolTip": "src\\models\\__init__.py",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-11-13T12:11:57.044Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-13T12:11:57.044Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "predictor.py",
               "DocumentMoniker": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\src\\models\\predictor.py",
               "RelativeDocumentMoniker": "src\\models\\predictor.py",
@@ -373,12 +361,11 @@
               "RelativeToolTip": "src\\models\\predictor.py",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-11-13T12:12:57.158Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-13T12:12:57.158Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "__init__.py",
               "DocumentMoniker": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\src\\utils\\__init__.py",
               "RelativeDocumentMoniker": "src\\utils\\__init__.py",
@@ -386,12 +373,11 @@
               "RelativeToolTip": "src\\utils\\__init__.py",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-11-13T12:13:02.906Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-13T12:13:02.906Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "__init__.py",
               "DocumentMoniker": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\src\\ocr\\__init__.py",
               "RelativeDocumentMoniker": "src\\ocr\\__init__.py",
@@ -399,12 +385,11 @@
               "RelativeToolTip": "src\\ocr\\__init__.py",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-11-13T12:15:39.331Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-13T12:15:39.331Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "PROJECT_STRUCTURE.md",
               "DocumentMoniker": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\PROJECT_STRUCTURE.md",
               "RelativeDocumentMoniker": "PROJECT_STRUCTURE.md",
@@ -412,12 +397,11 @@
               "RelativeToolTip": "PROJECT_STRUCTURE.md",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAJsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-11-13T12:16:35.675Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-13T12:16:35.675Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "__init__.py",
               "DocumentMoniker": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\src\\data\\__init__.py",
               "RelativeDocumentMoniker": "src\\data\\__init__.py",
@@ -425,12 +409,11 @@
               "RelativeToolTip": "src\\data\\__init__.py",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-11-13T12:15:58.064Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-13T12:15:58.064Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "setup.py",
               "DocumentMoniker": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\setup.py",
               "RelativeDocumentMoniker": "setup.py",
@@ -438,12 +421,11 @@
               "RelativeToolTip": "setup.py",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-11-13T12:15:52.631Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-13T12:15:52.631Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "__init__.py",
               "DocumentMoniker": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\src\\hierarchy\\__init__.py",
               "RelativeDocumentMoniker": "src\\hierarchy\\__init__.py",
@@ -451,12 +433,11 @@
               "RelativeToolTip": "src\\hierarchy\\__init__.py",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-11-13T12:15:44.537Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-13T12:15:44.537Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "03_inference_demo.ipynb",
               "DocumentMoniker": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\notebooks\\03_inference_demo.ipynb",
               "RelativeDocumentMoniker": "notebooks\\03_inference_demo.ipynb",
@@ -464,12 +445,11 @@
               "RelativeToolTip": "notebooks\\03_inference_demo.ipynb",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAANQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-11-13T12:15:33.054Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-13T12:15:33.054Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "02_model_training.ipynb",
               "DocumentMoniker": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\notebooks\\02_model_training.ipynb",
               "RelativeDocumentMoniker": "notebooks\\02_model_training.ipynb",
@@ -477,12 +457,11 @@
               "RelativeToolTip": "notebooks\\02_model_training.ipynb",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAANYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-11-13T12:15:02.596Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-13T12:15:02.596Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "README.MD",
               "DocumentMoniker": "C:\\Users\\kovacsik\\Documents\\GitHub\\AI-Agent\\README.MD",
               "RelativeDocumentMoniker": "README.MD",
@@ -490,8 +469,7 @@
               "RelativeToolTip": "README.MD",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-11-13T12:09:27.78Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-13T12:09:27.78Z"
             }
           ]
         }

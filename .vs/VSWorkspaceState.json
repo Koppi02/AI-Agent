@@ -11,5 +11,6 @@
     "\\src\\ocr",
     "\\src\\utils"
   ],
+  "SelectedNode": "\\scripts\\predict.py",
   "PreviewInSolutionExplorer": false
 }
