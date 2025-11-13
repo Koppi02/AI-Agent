@@ -165,7 +165,8 @@
               "RelativeToolTip": "src\\data\\preprocessor.py",
               "ViewState": "AgIAAGUAAAAAAAAAAAAAAJUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-11-13T12:27:55.128Z"
+              "WhenOpened": "2025-11-13T12:27:55.128Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -298,8 +299,7 @@
               "RelativeToolTip": "src\\hierarchy\\validator.py",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAI0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-11-13T12:29:03.546Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-13T12:29:03.546Z"
             },
             {
               "$type": "Document",
